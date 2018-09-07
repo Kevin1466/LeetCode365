@@ -105,7 +105,7 @@ public class NestedList {
 
 class NestedIterator implements Iterator<Integer> {
     private int index, pos;
-    private List<Integer> plainIntList;
+    private List<Integer> plainIntList = new LinkedList<>();
     public NestedIterator(List<NestedInteger> nestedList) {
         plainIntList = goThroughNestedList(nestedList);
     }
